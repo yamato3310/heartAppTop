@@ -31,7 +31,6 @@ header  div {
 }
 
 header div img {
-    /* display: block; */
     max-width: 23%;
     height: auto;
 }
@@ -47,7 +46,7 @@ header div span {
     width: 70vw;
     height: 6vh;
     font-family: 'Franklin Gothic Medium','Futura',sans-serif;
-    font-size: 17pt;
+    font-size: 14pt;
     margin-top: 10px;
 }
 
@@ -56,6 +55,7 @@ header div span {
     width: 77%;
     left: 23%;
     height: 20.9vh;
+    max-height: 140px;
 }
 
 .info h1 {
@@ -93,11 +93,11 @@ main {
     height: 400vh;
     width: 100%;
     z-index: -10;
-    /* background: rgba(0, 0, 0, 0.2); */
 }
 
 #mask {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.68));
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.68));
+    background-size: 100%;
     width: 100%;
     height: 400vh;
     position: absolute;
@@ -130,7 +130,7 @@ main {
     font-family: 'Franklin Gothic Medium','Futura',sans-serif;
     font-size: 18pt;
     height: 0.5vh;
-    color: rgb(44, 16, 80);
+    color: #7568FF;
     /* line-height: 0; */
 }
 
@@ -219,6 +219,7 @@ main section {
 .app_image {
     width: 26vw;
     height: 26vh;
+    max-height: 178px;
 }
 
 .app_image_wrapper {
@@ -261,11 +262,16 @@ footer {
     height: 62px;
 }
 
+#footer_logo_container figure {
+    width: 39px;
+}
+
 .day {
     text-align: center;
     color: #2521FF;
     font-size: 18pt;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 small {
@@ -278,6 +284,10 @@ small {
     font-size: 9pt;
 }
 
+#footer_top {
+    margin-left: 10px;
+}
+
 #footer_top span:nth-child(1) {
     display: block;
     text-align: center;
@@ -286,6 +296,7 @@ small {
     height: 33px;
     width: 264px;
     color: #2521FF;
+    font-weight: bold;
 }
 
 #footer_top span:nth-child(2) {
@@ -293,6 +304,7 @@ small {
     text-align: center;
     font-family: 'Franklin Gothic Medium','Futura',sans-serif;
     color: #2521FF;
+    font-weight: bold;
 }
 
 .footer_wrapper {
@@ -301,24 +313,28 @@ small {
 
 .common_border {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 9vh;
     width: 1px;
     background-color: #231FFF;
     text-align: center;
     z-index: 20;
+    position: relative;
 }
 
 .common_border_radius {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-color: #231FFF;
     border-radius: 50%;
     z-index: 20;
     position: absolute;
+    display: block;
+    margin: 0 auto;
+    left: 48.5%;
 }
 
 .border_1 {
-    height: 25vh;
+    height: 21.5vh;
 }
 
 .border_1 div {
@@ -326,9 +342,48 @@ small {
 }
 
 .border_2 {
-    height: 45vh;
+    height: 36vh;
 }
 
 .border_3 {
-    height: 40vh;
+    height: 31vh;
+}
+
+.border_top {
+    height: 7vh;
+    width: 1px;
+    background-color: #231FFF;
+    z-index: 20;
+    position: relative;
+}
+
+.border_wrapper {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.border_radius_top {
+    width: 10px;
+    height: 10px;
+    background-color: #231FFF;
+    border-radius: 50%;
+    z-index: 20;
+    position: absolute;
+    display: block;
+    top: 7vh;
+    right: -4.5px;
+}
+
+.scroll_text {
+    font-family: 'Franklin Gothic Medium','Futura',sans-serif;
+    position: absolute;
+    top: 8.5vh;
+    right: -5vw;
+    color: #231FFF;
+}
+
+small span {
+    font-family: 'Franklin Gothic Medium','Futura',sans-serif;
+    font-weight: bold;
 }
