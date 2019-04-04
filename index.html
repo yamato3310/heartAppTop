@@ -11,10 +11,11 @@
 <body>
     <header id="header_wrap">
         <div class="border_wrapper">
-            <div class="border_top"></div><div class="border_radius_top"></div>
+            <div class="border_top border_animation"></div>
+            <div class="border_radius_top"></div>
             <div class="scroll_text">scroll</div>
         </div>
-        <div>
+        <div class="info_container">
             <figure>
                 <img src="./logo.png">
             </figure>
@@ -26,92 +27,101 @@
         </div>
     </header>
     <main>
-        <div id="mask"></div>
-        <section>
-            <div class="info_img">
-                <img src="./hello_isc.png">
-            </div>
-            <p class="attention">
-                <span>
-                    新入生の皆さん<br>
-                    ご入学おめでとうございます!<br>
-                </span>
-                <span class="attention_section">
-                    私たち情報科学専門は<br>
-                    <span class="strong">【IT × アイドル】</span><br>
-                    をテーマにパフォーマンスを披露します。<br>
-                </span>
-                <span>
-                    こちらではアイドルライブを盛り上げる<br>
-                    WEBアプリの使い方をご説明します。<br>
-                </span>
-            </p>
-            <button class="start_button">
-                <div>
-                    <img src="./button_icon.png"/>
-                    <span>起動</span>
+        <div id="mask">
+            <section>
+                <div class="info_img">
+                    <img src="./hello_isc.png">
                 </div>
-            </button>
-            <div class="border_1 common_border"></div><div class="common_border_radius"></div></div>
-        </section>
-        <section>
-        <ul id="app_info_container">
-            <li>
-                <figure class="description">
-                    <img id="app_image" src="./app_image_1.gif">
-                </figure>
-                <h3 class="number_label"><div>1</div></h3>
-                <p class="main_text">
-                    WEBアプリに<br>
-                    アクセス
+                <p class="attention">
+                    <span>
+                        新入生の皆さん<br>
+                        ご入学おめでとうございます!<br>
+                    </span>
+                    <span class="attention_section">
+                        私たち情報科学専門は<br>
+                        <span class="strong">【 IT × アイドル 】</span><br>
+                        をテーマにパフォーマンスを披露します。<br>
+                    </span>
+                    <span>
+                        こちらではアイドルライブを盛り上げる<br>
+                        WEBアプリの使い方をご説明します。<br>
+                    </span>
                 </p>
-                <div class="border_2 common_border"></div><div class="common_border_radius"></div>
-            </li>
-            <li>
-                <figure class="description">
-                    <img src="./app_image_2.gif">
-                </figure>
-                <img class="app_image cover_app_image" src="./app_image_3.png">
-                <h3 class="number_label"><div>2</div></h3>
-                <p class="main_text">
-                    スマホを振ると<br>
-                    アイドルたちに「いいね！」を<br>
-                    送信することができます
-                </p>
-                <div class="border_3 common_border"></div><div class="common_border_radius"></div>
-            </li>
-            <li>
-                <figure class="app_image_wrapper">
-                    <img class="app_image" src="./app_image_3_1.png">
-                    <img class="app_image" src="./app_image_3_2.png">
-                    <img class="app_image" src="./app_image_3_3.png">
-                </figure>
-                <h3 class="number_label"><div>3</div></h3>
-                <p class="main_text">
-                    真ん中のハートをタップすると<br>
-                    スマホスライドの色が変わる！<br>
-                    推しの色で応援しよう
-                </p>
-            </li>
-        </ul>
-        </section>
+                <button class="start_button">
+                    <div>
+                        <img src="./button_icon.png"/>
+                        <span>起動</span>
+                    </div>
+                </button>
+                <div class="next_border_wrap">
+                    <div class="border_top next_border"></div>
+                    <div class="border_radius_top"></div>
+                </div>
+            </section>
+            <section>
+            <ul id="app_info_container">
+                <li>
+                    <figure class="description">
+                        <img src="./app_image_1.gif" class="app_main_image">
+                    </figure>
+                    <h3 class="number_label"><div>1</div></h3>
+                    <p class="main_text">
+                        WEBアプリに<br>
+                        アクセス
+                    </p>
+                    <div class="next_border_wrap next-margin-top">
+                        <div class="border_top next_border"></div>
+                        <div class="border_radius_top"></div>
+                    </div>
+                </li>
+                <li>
+                    <figure class="description">
+                        <img src="./app_image_2.gif" class="app_main_image">
+                    </figure>
+                    <img class="cover_app_image" src="./app_image_3.png">
+                    <h3 class="number_label"><div>2</div></h3>
+                    <p class="main_text">
+                        スマホを振ると<br>
+                        アイドルたちに「いいね！」を<br>
+                        送信することができます
+                    </p>
+                    <div class="next_border_wrap next-margin-top">
+                        <div class="border_top next_border"></div>
+                        <div class="border_radius_top"></div>
+                    </div>
+                </li>
+                <li>
+                    <figure class="app_image_wrapper">
+                        <img class="app_image" src="./app_image_3_1.png">
+                        <img class="app_image" src="./app_image_3_2.png">
+                        <img class="app_image" src="./app_image_3_3.png">
+                    </figure>
+                    <h3 class="number_label"><div>3</div></h3>
+                    <p class="main_text">
+                        真ん中のハートをタップすると<br>
+                        スマホスライドの色が変わる！<br>
+                        推しの色で応援しよう
+                    </p>
+                </li>
+            </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <div class="footer_mask"></div>
-        <div class="footer_wrapper">
-            <div id="footer_logo_container">
-                <figure>
+        <div class="footer_mask">
+            <div class="footer_wrapper">
+                <div id="footer_logo_container">
                     <img class="footer_image" src="./logo.png">
-                </figure>
-                <div id="footer_top">
-                    <span>情報科学専門学校</span>
-                    <span>入学式パフォーマンス2019</span>
+                    <div id="footer_top">
+                        <span>情報科学専門学校</span>
+                        <span>入学式パフォーマンス2019</span>
+                    </div>
                 </div>
+                <p class="day">4.6 Sat.</p>
+                <small>
+                    <span>CAST</span>／さきぴ こっとん はるる みぽりん づっき ゆうたん　<span>開発</span>／Make IT　<span>テスト協力</span>／IPFactory
+                </small>
             </div>
-            <p class="day">4.6 Sat.</p>
-            <small>
-                <span>CAST</span>/さきぴ　こっとん　はるる　みぽりん　づっき　ゆうたん　<span>開発</span>/Make IT　<span>テスト協力</span>/IPFactory
-            </small>
         </div>
     </footer>
 </body>
